@@ -10,7 +10,7 @@ import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
  */
 public interface FileService {
     String post(InputStream inputStream, FormDataContentDisposition fileMetadata, String json);
-    String put(InputStream inputStream, String json);
+    void put(InputStream inputStream, String json);
     StreamingOutput get(String json);
     void delete(String json);
 }
